@@ -32,6 +32,7 @@ var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLcompany = '<div>%data%</div>';
+var HTMLworkOccupation = '<div>职位：%data%</div>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
@@ -56,5 +57,5 @@ var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="%data%" target="_blank">官网链接</a>';
 
-var internationalizeButton = '<button>Internationalize</button>';
-var googleMap = '<div id="map"></div>';
+// 底部
+var HTMLsourceUrl = '<li class="flex-item"><a class="orange-text sreUrl" href="%data%" target="_blank">简历源码地址</a></li>'

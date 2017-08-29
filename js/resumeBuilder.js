@@ -93,6 +93,9 @@ var model = {
     }
     ]
   },
+  source: {
+    url: 'https://github.com/LwcReber/Resume'
+  },
   // 替换元素的内容
   setPlaceholder: function(old, replacedata) {
     return old.replace("%data%", replacedata);
@@ -123,7 +126,10 @@ var octopus = {
   getEducation: function() {
     return model.edu;
   },
-
+  // 获取源码url数据
+  getSource: function() {
+    return model.source;
+  } ,
   // 获取元素的显示内容
   getPlaceholder: function(old, replacedata) {
     return model.setPlaceholder(old, replacedata);
@@ -136,6 +142,7 @@ var view = {
     this.work = octopus.getWork();
     this.projects = octopus.getProjects();
     this.edu = octopus.getEducation();
+    this.source = octopus.getSource();
 
     this.header = $("#header");
     this.workExperienceElem = $("#workExperience");
@@ -212,7 +219,10 @@ var view = {
       // 工作雇主
       // var workEmployer = octopus.getPlaceholder(HTMLworkEmployer, this.work.jobs[i].employer);
       // var workTitle = octopus.getPlaceholder(HTMLworkTitle, this.work.jobs[i].title);
+      // 公司
       var company = octopus.getPlaceholder(HTMLcompany, this.work.jobs[i].company);
+      // 职业
+      var occupation = octopus.getPlaceholder(HTMLworkOccupation, this.work.jobs[i].title);
       // 工作时间
       var workDates = octopus.getPlaceholder(HTMLworkDates, this.work.jobs[i].dates);
 
@@ -223,7 +233,7 @@ var view = {
       var workDescription = octopus.getPlaceholder(HTMLworkDescription, this.work.jobs[i].description);
 
       // 添加元素到work-entry元素
-      this.appendElem(workEtyElem, company + workDates + workLocation + workDescription);
+      this.appendElem(workEtyElem, company + occupation + workDates + workLocation + workDescription);
     }
 
     /**
@@ -297,6 +307,9 @@ var view = {
       this.appendElem($(onlineClassEtyElem), onlineTitle + onlineSchool + onlineDates + onlineUrl);
     }
 
+    // 添加源码地址
+    var sourceUrl = octopus.getPlaceholder(HTMLsourceUrl, this.source.url);
+    this.appendElem(this.footerContacts, sourceUrl);
   }
 }
 octopus.init();

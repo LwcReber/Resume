@@ -91,6 +91,9 @@ a {
   margin-top: 10px;
   display: block;
 }
+.sreUrl {
+  margin-top: 0px;
+}
 
 .welcome-message {
   font-style: italic;
