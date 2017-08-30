@@ -21,12 +21,21 @@ var model = {
   edu: {
     schools: [{
       name: '深圳职业技术学院',
-      location: '广东省深圳市南山区西丽湖沙河西路',
+      location: '深圳市南山区西丽湖沙河西路',
       degree: '大专',
       majors: ['汽车电子技术'],
       dates: '2013.9-2016.7',
       url: 'http://www.szpt.edu.cn/in_index.shtml'
     }],
+    prizes: [
+      '深圳职业技术学院优秀毕业生',
+      '汽车与交通学院2016届“创新创业之星”',
+      '全国大学生“飞思卡尔”杯智能车竞赛三等奖',
+      '广东省第十三届“挑战杯”三等奖',
+      '广东省第十五届物理实验设计大赛三等奖',
+      '第十一届专业技能大比武一等奖',
+      '国家励志奖学金2次、二等奖学金2次、三等奖学金2次、三好学生1次'
+    ],
     onlineCourses: [{
       title: '前端开发进阶',
       school: '优达学城（Udacity）',
@@ -41,7 +50,7 @@ var model = {
       employer: 'Mr XX',
       company: '深圳瑞泰讯通信息技术有限公司',
       title: 'MCU软件工程师',
-      location: '深圳宝安西乡',
+      location: '深圳市宝安区西乡',
       dates: '2016.2-2017.2',
       description: '使用C语言，对 MCU（富士通、STM32F103）进行软件编写，项目开发前期的功能评定、负责车载导航底层 MCU各模块的开发与维护，与 APP 进行联调实现客户需求。'
     }]
@@ -286,6 +295,14 @@ var view = {
       var schoolMajors = octopus.getPlaceholder(HTMLschoolMajor, schoolMajor);
       // 添加学校
       this.appendElem($(schoolEtyElem), schoolName + schooDegree + schoolDates + schoolLocation + schoolMajors);
+    }
+
+    // 获奖情况
+    this.appendElem(this.educationElem, HTMLprizeTitle + HTMLprizes)
+
+    for (var i = 0; i < this.edu.prizes.length; i++) {
+      var data = octopus.getPlaceholder(HTMLprize, this.edu.prizes[i]);
+      this.appendElem($('.prizes'), data);
     }
 
     // 在线教育

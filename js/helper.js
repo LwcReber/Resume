@@ -12,7 +12,7 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr>';
+var HTMLheaderRole = '<span class="role">%data%</span><hr>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">手机号码</span><span class="white-text">%data%</span></li>';
@@ -51,7 +51,11 @@ var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>专业: %data%</em>';
 
-var HTMLonlineClasses = '<h3 class="OnCla-title">在线教育</h3>';
+var HTMLprizeTitle = '<h3 class="edu-title">获奖情况：</h3>'
+var HTMLprizes = '<ul class="prizes"></ul>'
+var HTMLprize = '<li>%data%</li>'
+
+var HTMLonlineClasses = '<h3 class="edu-title">在线教育</h3>';
 var HTMLonlineTitle = '<a href="#">%data%';
 var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
