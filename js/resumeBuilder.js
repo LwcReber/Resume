@@ -13,7 +13,10 @@ var model = {
       location: '深圳宝安'
     },
     welcomeMessage: 'just do it',
-    skills: ['HTML', 'CSS', 'JavaScript', 'C', 'gulp工具，了解ES6语法和Vue;', '熟悉框架：Jquery、swiper.js、Angular JS、Boostrap、knockout JS、Backbone JS'],
+    skills: ['熟练：HTML、SASS、Javascript、gulp、postcss、Jquery、swiper.js、Boostrap和c语言',
+      '熟悉框架：vue2.x、Angular JS、knockout JS、Backbone JS',
+      '熟悉：nodejs, npm，ajax，jsonp，常用的前端性能优化方法'
+    ],
     biopic: ''// 暂时不要头像
   },
 
@@ -49,10 +52,10 @@ var model = {
     jobs: [{
       employer: 'Mr XX',
       company: '深圳瑞泰讯通信息技术有限公司',
-      title: 'MCU软件工程师',
+      title: '前端开发工程师',
       location: '深圳市宝安区西乡',
-      dates: '2016.2-2017.2',
-      description: '使用C语言，对 MCU（富士通、STM32F103）进行软件编写，项目开发前期的功能评定、负责车载导航底层 MCU各模块的开发与维护，与 APP 进行联调实现客户需求。'
+      dates: '2015.8 – 2017.5',
+      description: '公司项目的前端开发相关工作，包括网页布局，页面交互动画，业务逻辑实现，项目的更新与维护等，与后端工程师调试，完成页面交互。'
     }]
   },
 

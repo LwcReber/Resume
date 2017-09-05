@@ -26,7 +26,7 @@ var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillsStart = '<h3 id="skills-h3">技能:</h3><ul id="skills" class=""></ul>';
-var HTMLskills = '<li class=""><span class="white-text">%data%</span></li>';
+var HTMLskills = '<li class=""><span class="white-text">%data%</span></li><br>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
