@@ -23,11 +23,11 @@ var model = {
   // 教育背景
   edu: {
     schools: [{
-      name: '深圳职业技术学院',
-      location: '深圳市南山区西丽湖沙河西路',
-      degree: '大专',
-      majors: ['汽车电子技术'],
-      dates: '2013.9-2016.7',
+      name: 'xxx',
+      location: 'xxxx',
+      degree: 'xxx',
+      majors: ['xxxx'],
+      dates: 'xxxx',
       url: 'http://www.szpt.edu.cn/in_index.shtml'
     }],
     prizes: [
@@ -42,7 +42,7 @@ var model = {
     onlineCourses: [{
       title: '前端开发进阶',
       school: '优达学城（Udacity）',
-      dates: '2017.5-2017.7',
+      dates: 'xxx',
       url: 'https://cn.udacity.com/'
     }]
   },
@@ -51,11 +51,11 @@ var model = {
   work: {
     jobs: [{
       employer: 'Mr XX',
-      company: '深圳瑞泰讯通信息技术有限公司',
+      company: 'xxxx',
       title: '前端开发工程师',
-      location: '深圳市宝安区西乡',
-      dates: '2015.8 – 2017.5',
-      description: '公司项目的前端开发相关工作，包括网页布局，页面交互动画，业务逻辑实现，项目的更新与维护等，与后端工程师调试，完成页面交互。'
+      location: 'xxxx',
+      dates: '20xx-20xx',
+      description: 'xxxxxx'
     }]
   },
 
